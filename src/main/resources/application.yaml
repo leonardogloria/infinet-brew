@@ -3,3 +3,13 @@ spring:
     mongodb:
       database: brewfantasy
       port: 27017
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: brewfantasy
+  resource: cerveja-api
+  credentials:
+    secret: 5KN4tzdIjEOXLXRLyuKHaZDHIn6iMGYz
+  bearer-only: true
+
+server:
+  port: 8081
